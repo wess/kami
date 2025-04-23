@@ -2,10 +2,10 @@
 set -e
 
 # Install script for kami
-# Usage: curl -fsSL https://raw.githubusercontent.com/youruser/kami/main/install.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/wess/kami/main/install.sh | sh
 # Replace the repo URL above with your actual repository URL.
 
-REPO_URL="https://github.com/youruser/kami.git"
+REPO_URL="https://github.com/wess/kami.git"
 INSTALL_DIR="$HOME/.kami"
 BIN_NAME="kami"
 

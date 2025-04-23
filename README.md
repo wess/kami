@@ -48,7 +48,7 @@ npm link
 Alternatively, use the provided install script (requires git and curl):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/youruser/kami/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/wess/kami/main/install.sh | sh
 ```
 Replace the URL with your actual repository if needed.
 
