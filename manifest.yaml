@@ -1,0 +1,2 @@
+webone: bun run examples/server1.ts
+webtwo: bun run examples/server2.ts

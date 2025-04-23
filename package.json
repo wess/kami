@@ -1,0 +1,28 @@
+{
+  "name": "kami",
+  "module": "src/main.ts",
+  "version": "0.0.1",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "kami": "build/kami"
+  },
+  "scripts": {
+    "dev": "bun run --hot src/main.ts",
+    "compile": "bun build --compile --outfile=build/kami ./src/main.ts",
+    "compile:mac": "bun build --compile --target=bun-darwin-arm64 --outfile=build/kami ./src/main.ts",
+    "compile:win": "bun build --compile --target=bun-windows-x64 --outfile=build/kami-win.exe ./src/main.ts",
+    "clean": "rm -rf build",
+    "test": "bun test",
+    "postinstall": "bun run compile"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
