@@ -104,27 +104,10 @@ bun run index.ts run build
 ## Example manifest.yaml
 
 ```yaml
-tasks:
-  build:
-    command: "bun build"
-  test:
-    command: "bun test"
+frontend: "bun run frontend"
+api: "bun run api"
 ```
 
-## Project Structure
-
-```
-kami/
-├── src/                # Source code for CLI and plugins
-│   ├── cli/            # CLI entry point and commands
-│   └── plugins/        # Plugin system (e.g., yaml)
-├── examples/           # Example server/task files
-├── manifest.yaml       # Example manifest file
-├── package.json        # Project metadata
-├── bunfig.toml         # Bun configuration
-├── LICENSE             # MIT License
-└── README.md           # Project documentation
-```
 
 ## Contributing
 
